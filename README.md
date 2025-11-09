@@ -1,12 +1,18 @@
 # Agent B - Runtime AI Web App Workflow Executor with Visual Guides
 
-Agent B is an AI-powered system that automatically executes web application tasks and generates step-by-step visual guides with UI screenshots. It intelligently analyzes natural language tasks, detects the target web app, performs the workflow using browser automation to interact with UI elements, and creates comprehensive decription with screenshots.
+Agent B is an AI-powered system that automatically executes web application tasks and generates step-by-step visual guides with UI screenshots. It intelligently analyzes natural language tasks, detects the target web app, performs the workflow using browser automation to interact with UI elements, and creates comprehensive documentation with screenshots.
+
+Agent B handles two types of tasks:
+- **Guidance Tasks** (questions): Demonstrates how to perform workflows (e.g., "How do I create a project in Linear?")
+- **Execution Tasks** (commands): Actually performs the actions (e.g., "Create a project in Linear named 'Project1'")
 
 **Supports**: Linear, Notion, Asana, and any web app (configurable via config.py)
 
 ## How It Works
 
-1. **Task Analysis**: Agent B extracts the app name from the task (e.g., "Linear", "Notion") using an LLM
+1. **Task Analysis**: Agent B analyzes the task using an LLM to:
+   - Extract the app name from the task (e.g., "Linear", "Notion")
+   - Detect the task type (guidance/question vs execution/command) based on question indicators like "how do i", "how to", etc.
 2. **URL Resolution**: Fetches the base URL from `config.py` file (from `APP_URLS` dictionary)
 3. **Step Planning**: Uses an LLM planner to break the task into step-by-step actionable points
 4. **Browser Automation**: Uses Playwright to navigate and interact with the app
