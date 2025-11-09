@@ -10,7 +10,7 @@ Agent B handles two types of tasks:
 
 ## Architecture Diagram
 
-<img src="Agent_B_Detailed_Execution_Flowchart.png" alt="Agent B Execution Flowchart" width="200">
+<img src="Agent_B_Detailed_Execution_Flowchart.png" alt="Agent B Execution Flowchart" width="250">
 
 The diagram above illustrates the complete workflow of Agent B, from task analysis through execution to documentation generation. It shows:
 - **Analyzing State**: LLM generates steps and detects task type (Guidance vs Execution mode)
