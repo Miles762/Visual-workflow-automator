@@ -1,0 +1,12 @@
+# Python version requirement
+# python>=3.10
+
+langgraph>=0.2.0
+langchain>=0.1.0
+langchain-google-genai>=1.0.0
+langsmith>=0.1.0
+playwright>=1.40.0
+pillow>=10.0.0
+pydantic>=2.0.0
+python-dotenv>=1.0.0
+pyyaml>=6.0.0
