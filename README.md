@@ -12,7 +12,7 @@ Agent B handles two types of tasks:
 
 1. **Task Analysis**: Agent B analyzes the task using an LLM to:
    - Extract the app name from the task (e.g., "Linear", "Notion")
-   - Detect the task type (guidance/question vs execution/command) based on question indicators like "how do i", "how to", etc.
+   - Detect the task type (guidance/question vs execution/command) based on question indicators like "how do i", "how to",  "create" etc.
 2. **URL Resolution**: Fetches the base URL from `config.py` file (from `APP_URLS` dictionary)
 3. **Step Planning**: Uses an LLM planner to break the task into step-by-step actionable points
 4. **Browser Automation**: Uses Playwright to navigate and interact with the app
