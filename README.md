@@ -114,6 +114,8 @@ The system automatically:
 
 ## Output Structure
 
+When you run Agent B, outputs are saved to the `outputs/datasets/` directory. **Note**: This directory is gitignored and not committed to the repository.
+
 ```
 outputs/datasets/
 ├── linear/
@@ -125,6 +127,8 @@ outputs/datasets/
 │       ├── step_4_success_modal.png
 │       └── README.md
 ```
+
+**Example Outputs**: Check the `example_outputs/` directory in this repository to see example workflow outputs and screenshot documentation.
 
 ## Architecture
 
