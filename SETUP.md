@@ -21,7 +21,7 @@ GOOGLE_API_KEY=your_gemini_api_key_here
 
 # LangSmith
 LANGSMITH_API_KEY=your_langsmith_api_key_here
-LANGSMITH_PROJECT=dev_softlight
+LANGSMITH_PROJECT=Visual-workflow-automator
 LANGSMITH_TRACING=true
 
 # Browser Settings
@@ -56,5 +56,5 @@ tasks = [
 All operations are automatically traced in LangSmith. Visit:
 https://smith.langchain.com
 
-Select your project (`dev_softlight` by default) to see all workflow executions.
+Select your project (`Visual-workflow-automator` by default) to see all workflow executions.
 

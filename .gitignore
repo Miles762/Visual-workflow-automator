@@ -25,6 +25,9 @@ MANIFEST
 
 # Virtual Environment
 softlight/
+VW_Auto/
+
+
 venv/
 ENV/
 env/
